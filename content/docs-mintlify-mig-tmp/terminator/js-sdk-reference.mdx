@@ -8,13 +8,11 @@ icon: "js"
 ### hello world
 
 ```bash
-cd bindings/nodejs
-npm install
-npm run build 
+bun i terminator.js # or npm, pnpm, yarn
 ```
 
 ```typescript
-const { Desktop } = require('../bindings/nodejs');
+const { Desktop } = require('terminator.js');
 const desktop = new Desktop();
 ```
 
@@ -109,7 +107,7 @@ await editorLocator.expectTextContains('partial text');
 ### complete example
 
 ```typescript
-const { Desktop } = require('../bindings/nodejs');
+const { Desktop } = require('terminator.js');
 
 async function automateCalculator() {
   try {
@@ -153,3 +151,7 @@ try {
   }
 }
 ```
+
+more examples
+
+https://github.com/mediar-ai/terminator-typescript-examples
